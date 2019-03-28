@@ -1,0 +1,12 @@
+C:\Users\Ronye\Desktop\Dev\PaymentContext\paymentcontext.domain\bin\Debug\netstandard2.0\paymentcontext.domain.deps.json
+C:\Users\Ronye\Desktop\Dev\PaymentContext\paymentcontext.domain\bin\Debug\netstandard2.0\paymentcontext.domain.dll
+C:\Users\Ronye\Desktop\Dev\PaymentContext\paymentcontext.domain\bin\Debug\netstandard2.0\paymentcontext.domain.pdb
+C:\Users\Ronye\Desktop\Dev\PaymentContext\paymentcontext.domain\obj\Debug\netstandard2.0\paymentcontext.domain.csprojAssemblyReference.cache
+C:\Users\Ronye\Desktop\Dev\PaymentContext\paymentcontext.domain\obj\Debug\netstandard2.0\paymentcontext.domain.csproj.CoreCompileInputs.cache
+C:\Users\Ronye\Desktop\Dev\PaymentContext\paymentcontext.domain\obj\Debug\netstandard2.0\paymentcontext.domain.AssemblyInfoInputs.cache
+C:\Users\Ronye\Desktop\Dev\PaymentContext\paymentcontext.domain\obj\Debug\netstandard2.0\paymentcontext.domain.AssemblyInfo.cs
+C:\Users\Ronye\Desktop\Dev\PaymentContext\paymentcontext.domain\obj\Debug\netstandard2.0\paymentcontext.domain.dll
+C:\Users\Ronye\Desktop\Dev\PaymentContext\paymentcontext.domain\obj\Debug\netstandard2.0\paymentcontext.domain.pdb
+C:\Users\Ronye\Desktop\Dev\PaymentContext\paymentcontext.domain\bin\Debug\netstandard2.0\paymentcontext.shared.dll
+C:\Users\Ronye\Desktop\Dev\PaymentContext\paymentcontext.domain\bin\Debug\netstandard2.0\paymentcontext.shared.pdb
+C:\Users\Ronye\Desktop\Dev\PaymentContext\paymentcontext.domain\obj\Debug\netstandard2.0\paymentcontext.domain.csproj.CopyComplete

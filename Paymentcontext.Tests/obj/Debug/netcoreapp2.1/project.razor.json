@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\Ronye\\Desktop\\Dev\\PaymentContext\\paymentcontext.tests\\paymentcontext.tests.csproj",
+  "TargetFramework": "netcoreapp2.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
