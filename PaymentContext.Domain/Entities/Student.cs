@@ -12,7 +12,7 @@ namespace PaymentContext.Domain.Entities
             Document = document;
             Email = email;
 
-            _subscriptions = new IList<Subscription>();
+            _subscriptions = new List<Subscription>();
         }
 
         private IList<Subscription> _subscriptions;
