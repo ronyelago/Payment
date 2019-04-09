@@ -1,3 +1,4 @@
+using paymentcontext.domain.ValueObjects;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -5,10 +6,9 @@ namespace PaymentContext.Domain.Entities
 {
     public class Student
     {
-        public Student(string firstName, string lastName, string document, string email)
+        public Student(Name name, string lastName, string document, string email)
         {
-            FirstName = firstName;
-            LastName = lastName;
+            Name = name;
             Document = document;
             Email = email;
 
@@ -17,8 +17,7 @@ namespace PaymentContext.Domain.Entities
 
         private IList<Subscription> _subscriptions;
 
-        public string FirstName { get; private set; }
-        public string LastName { get; private set; }
+        public Name Name { get; private set; }
         public string Document { get; private set; }
         public string Email { get; private set; }
         public string Address { get; set; }
