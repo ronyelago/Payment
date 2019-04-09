@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 
 namespace PaymentContext.Domain.Entities
 {
@@ -10,18 +11,31 @@ namespace PaymentContext.Domain.Entities
             LastName = lastName;
             Document = document;
             Email = email;
+
+            _subscriptions = new IList<Subscription>();
         }
+
+        private IList<Subscription> _subscriptions;
 
         public string FirstName { get; private set; }
         public string LastName { get; private set; }
         public string Document { get; private set; }
         public string Email { get; private set; }
         public string Address { get; set; }
-        public List<Subscription> Subscriptions { get; set; }
+        public IReadOnlyCollection<Subscription> Subscriptions { get { return _subscriptions.ToArray(); } }
 
         public void AddSubscription(Subscription subscription)
         {
-            
+            // se já houver uma assinatura ativa, cancele
+            // ou
+            // cancele todas as outras assinaturas e defina esta como principal
+
+            foreach (var sub in Subscriptions)
+            {
+                sub.Active = false;
+            }
+
+            _subscriptions.Add(subscription);
         }
     }
 }
