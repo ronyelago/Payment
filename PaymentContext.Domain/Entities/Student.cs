@@ -32,7 +32,7 @@ namespace PaymentContext.Domain.Entities
 
             foreach (var sub in Subscriptions)
             {
-                sub.Active = false;
+                sub.Disable();
             }
 
             _subscriptions.Add(subscription);

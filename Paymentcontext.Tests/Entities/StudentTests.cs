@@ -9,7 +9,7 @@ namespace PaymentContext.Tests.Entities
         [TestMethod]
         public void TestMethod1()
         {
-            var subscription = new Subscription();
+            var subscription = new Subscription(null);
         }
     }
 }
