@@ -1,6 +1,8 @@
-﻿namespace paymentcontext.domain.ValueObjects
+﻿using paymentcontext.shared.ValueObjects;
+
+namespace paymentcontext.domain.ValueObjects
 {
-    public class Email
+    public class Email : ValueObject
     {
         public Email(string address)
         {
