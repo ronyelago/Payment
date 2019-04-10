@@ -5860,6 +5860,7 @@
       "MSTest.TestFramework >= 1.3.2",
       "Microsoft.NET.Test.Sdk >= 15.9.0",
       "Microsoft.NETCore.App >= 2.1.0",
+      "flunt >= 1.0.3",
       "paymentcontext.domain >= 1.0.0",
       "paymentcontext.shared >= 1.0.0"
     ]
@@ -5928,6 +5929,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "flunt": {
+            "target": "Package",
+            "version": "[1.0.3, )"
           }
         },
         "imports": [

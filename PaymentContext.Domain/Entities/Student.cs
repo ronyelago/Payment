@@ -14,6 +14,8 @@ namespace PaymentContext.Domain.Entities
             Email = email;
 
             _subscriptions = new List<Subscription>();
+
+            AddNotifications(name, document, email);
         }
 
         private IList<Subscription> _subscriptions;
