@@ -12,7 +12,7 @@ namespace PaymentContext.Domain.Entities
             DateTime expireDate, 
             decimal total, 
             decimal totalPayd, 
-            string address, 
+            Address address, 
             Document document, 
             Email email)
         {
@@ -34,7 +34,7 @@ namespace PaymentContext.Domain.Entities
         public DateTime ExpireDate { get; private set; }
         public decimal Total { get; private set; }
         public decimal TotalPayd { get; private set; }
-        public string Address { get; private set; }
+        public Address Address { get; private set; }
         public Email Email { get; private set; }       
     }
 }
