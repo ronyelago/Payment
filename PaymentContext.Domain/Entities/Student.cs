@@ -1,10 +1,11 @@
 using paymentcontext.domain.ValueObjects;
+using paymentcontext.shared.Entities;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace PaymentContext.Domain.Entities
 {
-    public class Student
+    public class Student : Entity
     {
         public Student(Name name, string lastName, Document document, Email email)
         {
