@@ -12,7 +12,11 @@ namespace paymentcontext.domain.ValueObjects
 
             AddNotifications(new Contract()
                     .Requires()
+                    .HasMinLen(FirstName, 3, "Name.FirstName", "Nome muito curto")
+                    .HasMaxLen(FirstName, 40, "Name.FirstName", "Nome muito longo")
                     .IsNullOrEmpty(FirstName, "Name.FirstName", "Nome inválido")
+                    .HasMinLen(LastName, 3, "Name.Lastname", "Sobrenome muito curto")
+                    .HasMaxLen(LastName, 40, "Name.LastName", "Sobrenome muito longo")
                     .IsNullOrEmpty(LastName, "Name.LastName", "Sobrenome inválido")
                 );
         }
