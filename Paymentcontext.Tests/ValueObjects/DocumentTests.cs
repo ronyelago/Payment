@@ -22,6 +22,7 @@ namespace paymentcontext.tests.ValueObjects
             Assert.IsTrue(doc.Valid);
         }
 
+        [TestMethod]
         public void ShoudReturnErrorWhenCPFIsInvalid()
         {
             var doc = new Document("1234", EDocumentType.CPF);
