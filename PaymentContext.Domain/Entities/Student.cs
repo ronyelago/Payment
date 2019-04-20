@@ -8,7 +8,7 @@ namespace PaymentContext.Domain.Entities
 {
     public class Student : Entity
     {
-        public Student(Name name, string lastName, Document document, Email email)
+        public Student(Name name, Document document, Email email)
         {
             Name = name;
             Document = document;
