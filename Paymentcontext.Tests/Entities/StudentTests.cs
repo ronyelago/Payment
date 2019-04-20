@@ -23,5 +23,15 @@ namespace PaymentContext.Tests.Entities
 
             var student = new Student(name, document, email);
         }
+
+        [TestMethod]
+        public void ShoudReturnErrorWhenSubscriptionHasNoPayment()
+        {
+            var name = new Name("Bruce", "Wayne");
+            var document = new Document("37810823899", EDocumentType.CPF);
+            var email = new Email("bruce.wayne@gmail.com");
+
+            var student = new Student(name, document, email);
+        }
     }
 }
