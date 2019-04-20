@@ -30,9 +30,13 @@ namespace paymentcontext.tests.ValueObjects
         }
 
         [TestMethod]
-        public void ShouldReturnSuccessIfCPFIsValid()
+        [DataTestMethod]
+        [DataRow("13289023430")]
+        [DataRow("37802201250")]
+        [DataRow("79928029156")]
+        public void ShouldReturnSuccessIfCPFIsValid(string cpf)
         {
-            var doc = new Document("37810823899", EDocumentType.CPF);
+            var doc = new Document(cpf, EDocumentType.CPF);
             Assert.IsTrue(doc.Valid);
         }
     }
