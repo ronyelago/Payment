@@ -30,7 +30,7 @@ namespace PaymentContext.Domain.Entities
         public void AddSubscription(Subscription subscription)
         {
             bool hasActiveSubscription = false;
-            //check if this is ok
+            
             foreach (Subscription sub in _subscriptions)
             {
                 if (sub.Active)
