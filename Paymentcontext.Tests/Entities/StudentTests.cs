@@ -39,11 +39,13 @@ namespace PaymentContext.Tests.Entities
         }
 
         [TestMethod]
-        public void ShoudReturnSuccessWhenHadActiveSubscription()
+        public void ShoudReturnSuccessWhenAddSubscription()
         {
+            var payment = new PayPalPayment("123456", "Wayne Corp", "4321", DateTime.Now, DateTime.Now, 10, 10, _address, _document, _email);
+            _subscription.AddPayment(payment);
             _student.AddSubscription(_subscription);
 
-            Assert.IsTrue(_student.Invalid);
+            Assert.IsTrue(_student.Valid);
         }
 
         [TestMethod]
